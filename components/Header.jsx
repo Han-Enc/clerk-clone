@@ -6,16 +6,19 @@ const Header = () => {
   const { userId } = auth();
   return (
     <>
-      <nav className="bg-red-900 py-4 px-8">
+      <nav className="bg-slate-900 py-4 px-8">
         <div className="flex items-center justify-between container">
           <div className="flex items-center font-bold">
             <Link href="/">
-              <div className="text-lg text-white">Clerk Auth</div>
+              <div className="text-4xl text-white">Clerk Auth</div>
             </Link>
           </div>
 
           <div className="flex items-center font-bold">
-            <Link href="/repos" className="text-gray-300 hover:text-white mr-4">
+            <Link
+              href="/repos"
+              className="text-2xl text-gray-300 hover:text-white mr-4"
+            >
               Repos
             </Link>
           </div>
@@ -39,6 +42,7 @@ const Header = () => {
                 </Link>
               </>
             ) : (
+              // 로그인이 된 경우
               <>
                 <Link
                   href="/dashboard"
