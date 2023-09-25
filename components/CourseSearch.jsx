@@ -20,7 +20,7 @@ const CourseSearch = ({ getSearchResults }) => {
       />
       <button
         type="submit"
-        className="p-2 m-2 text-white bg-blue-700 hover:bg-blue-800 rounded-lg"
+        className="p-2 m-2 text-white bg-slate-700 hover:bg-slate-800 rounded-lg"
       >
         Search
       </button>

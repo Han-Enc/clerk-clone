@@ -8,14 +8,14 @@ const Courses = async ({ courses }) => {
   return (
     <div className="grid-1 ">
       {courses?.map((course) => (
-        <div key={course.id} className="bg-blue-200 p-4 m-4 rounded-lg">
+        <div key={course.id} className="bg-slate-200 p-4 m-4 rounded-lg">
           <h2>{course.title}</h2>
           <small>Level: {course.level}</small>
           <p className="mb-4">{course.description}</p>
           <Link
             href={course.link}
             target="_blank"
-            className="py-2 px-4 bg-blue-700 hover:bg-blue-800 text-white rounded-lg mb-4"
+            className="py-2 px-4 bg-slate-700 hover:bg-slate-800 text-white rounded-lg mb-4"
           >
             Go To Course
           </Link>
